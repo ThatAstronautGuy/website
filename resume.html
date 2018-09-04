@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Jared Kelly</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="wrapper">
+			<div class="box header">
+				<div class="pad"></div>
+				<a class="nostyle" href=".\">Jared Kelly</a>
+				<a class="nostyle toplink" href="about.html">About</a>
+				<a style="color: white" class="nostyle toplink" href="resume.html">Resume</a>
+				<a class="nostyle toplink" href="contact.html">Contact</a>
+			</div>
+			<div class="box content">
+				<style>
+					.wrapper {
+						grid-template-areas: 
+						"header header header"
+						"content content content"
+						"footer footer footer";
+					}
+				</style>
+				<object data="..\resume.pdf" type="application/pdf" width="100%" height="100%">
+				   <p>This browser does not support PDF embeds. Please <a href="..\resume.pdf">download my resume</a> to view it.</p>
+				</object>
+			</div>
+			<div class="box footer">&copy; Jared Kelly 2018</div>
+	</div>
+</body>
+</html>

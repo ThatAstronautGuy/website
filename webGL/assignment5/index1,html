@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Intro to Greyscale</title>
+  </head>
+
+  <body onload="main()">
+  	<div class="grid-container">
+	    <canvas id="canvas" width="200" height="200">
+			Please use a browser that supports "canvas"
+	    </canvas>
+
+	    <canvas id="canvas2" width="200" height="200">
+			Please use a browser that supports "canvas"
+	    </canvas>
+
+		<form><table>
+		<tr><th>Convert To Grey</th><th>Colour Filtering</th><th>Limit Greys</th><th>Limit Colours</th></tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="1"  onchange="applyFilter(1);" >Averaging</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="11" onchange="applyFilter(10);" >Red Only</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="11" onchange="applyFilter(16);" >4 Greys</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="34" onchange="applyFilter(20);" checked>64 Colours</input><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="1"  onchange="applyFilter(2);" >Luma</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="11" onchange="applyFilter(11);" >Green Only</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="11" onchange="applyFilter(17);" >16 Greys</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="34" onchange="applyFilter(21);" checked>512 Colours</input><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="1"  onchange="applyFilter(3);" >Luminance</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="11" onchange="applyFilter(12);" >Blue Only</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="11" onchange="applyFilter(18);" >32 Greys</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="34" onchange="applyFilter(228);" checked>4096 Colours</input><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="1"  onchange="applyFilter(4);" >De-saturation</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="7"  onchange="applyFilter(13);" >No Red</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="11" onchange="applyFilter(19);" >50 Greys</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="34" onchange="applyFilter(23);" checked>125000 Colours</input><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="1"  onchange="applyFilter(5);" >Max Decomp</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="7"  onchange="applyFilter(14);" >No Green</input><br/>
+			</td>
+			<td>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="34" onchange="applyFilter(0);" checked>No Conversion</input><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="1"  onchange="applyFilter(6);" >Min Decomp</input><br/>
+			</td>
+			<td>
+				<input type="radio" name="imgCon" value="7"  onchange="applyFilter(15);" >No Blue</input><br/>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="7"  onchange="applyFilter(7);" >Red as Grey</input><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="7"  onchange="applyFilter(8);" >Green as Grey</input><br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="radio" name="imgCon" value="7"  onchange="applyFilter(9);" >Blue as Grey</input><br/>
+			</td>
+		</tr>
+		</table></form>
+		<br/>
+		Image taken by me
+	   <script src="greys.js"></script>
+  </div>
+  </body>
+</html>

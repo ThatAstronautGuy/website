@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html,body {
+	font-family: 'Source Sans Pro', sans-serif;
+	height: 100%;
+	margin: 0;
+}
+
+.content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 50px 1fr 20px;
+	grid-template-areas: 
+		"header header header"
+		"....... content ......."
+		"footer footer footer";
+	background-color: #fff;
+	color: #444;
+	height: 100%;
+}
+
+.box {
+	color: black;
+	font-size: 130%;
+}
+
+.header {
+	background-color: #333;
+	height: 50px;
+	-webkit-box-shadow: 0 8px 6px -6px grey;
+	   -moz-box-shadow: 0 8px 6px -6px grey;
+	        box-shadow: 0 8px 6px -6px grey;
+}
+
+.nostyle {
+	text-decoration: none;
+	color: #9d9d9d;
+	font-size: 140%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.pad {
+	height: 6px;
+	padding: 0px;
+}
+
+.nostyle:hover {
+	color: #C0C0C0;
+}
+
+.toplink {
+	font-size: 120%;
+}
+
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.contentbody {
+	text-align: left;
+}
+.footer {
+	font-size: 100%;
+	background-color: #f8f8f8;
+}
+
+.profileimage {
+	border-radius: 50%;
+	padding-right: 10px;
+}
+
+.friends {
+	background: lightgrey;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 8px 6px -6px grey;
+   -moz-box-shadow: 0 8px 6px -6px grey;
+        box-shadow: 0 8px 6px -6px grey;
+    margin-bottom: 10px;
+}
+
+.friendshead {
+	display: inline-block;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+.friendsbody {
+	padding: 10px;
+	padding-top: 0px;
+}
+
+.inline {
+	float: left;
+}
+
+.friendslink {
+	text-decoration: none;
+	colour: ;
+}
+
+@media only screen and (max-width: 500px) {
+	.nostyle {
+		font-size: 120%;
+	}
+
+	.toplink {
+		font-size: 100%;
+	}
+
+	.header {
+		height: 40px;
+	}
+
+	.pad {
+		height: 5px;
+		padding: 0px;
+	}
+	
+	.content {
+		width: 80%;
+	}
+}

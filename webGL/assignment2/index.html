@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <title>Jared Kelly Assignment 2 Cosc 3306</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="700" height="700">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p>
+      <div id="buttons">
+        Scale Factor: 
+        <input type="radio" name="scale" onclick="setScale(0.5)" value="0.5"> 0.5
+        <input type="radio" name="scale" onclick="setScale(1.0)" value="1.0" checked="checked" id="one"> 1.0
+        <input type="radio" name="scale" onclick="setScale(1.5)" value="1.5"> 1.5
+        <input type="radio" name="scale" onclick="setScale(2.0)" value="2.0"> 2.0
+      </div>
+    </p>
+
+  	<p> Rotation Angle:
+  		<input id="slideMe" type="range" min="5" max="45" step="1" value="30"
+  		onchange="setAngle()"/>
+      <span id="sliderVal">30%</span>
+  	</p>
+
+    <p>
+      <button type="button" onclick="start()">START</button>
+      <button type="button" onclick="stop()">STOP</button>
+      <button type="button" onclick="reset()">RESET</button>
+    </p>
+  	
+    <P>
+      <li>Key Controls:</li>
+      <li>Colours: r = RED, t = TURQUOISE, c = CADMIUM, s = STONE, m = MULTICOLOURED</li>
+      <li>Change rotation speed: PgUp = go faster, PgDn = go slower</li>
+    </P> 
+    
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="MyLibrary.js"></script>
+    <script src="Assignment2.js"></script>
+  </body>
+</html>
+

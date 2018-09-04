@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lets Play a Game!</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="800">
+      Please use a browser that supports "canvas"
+    </canvas>
+  <p>
+    Use WASD to control the dwarf, and IJKL to control the elf.
+  </p>
+  <p>
+    Press R to reset, and F to roll the small die.
+  </p>
+	<p>
+		Rotation Left/Right:  <input id="yAngle" type="range" min="-180" max="180" step="5" value="0" onchange="setYAngle()" />
+		<span id="yAngletext" style="background-color: yellow;">0&deg;</span>
+	</p>
+	<p>
+		Rotation Up/Down:  <input id="xAngle" type="range" min="-180" max="180" step="5" value="0" onchange="setXAngle()" />
+		<span id="xAngletext" style="background-color: yellow;">0&deg;</span>
+	</p>
+	<p>
+		Camera: In/Out  <input id="cFactor" type="range" min="20" max="40" step="1" value="30" onchange="setCloseFactor()" />
+		<span id="closeFactorText" style="background-color: yellow;">3.0</span>
+	</p>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="project.js"></script>
+  </body>
+</html>

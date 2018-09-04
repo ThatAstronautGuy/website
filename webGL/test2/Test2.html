@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test 2 Program</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+	<p>
+		Rotation Left/Right:  <input id="yAngle" type="range" min="-180" max="180" step="5" value="0" onchange="setYAngle()" />
+		<span id="yAngletext" style="background-color: yellow;">0&deg;</span>
+	</p>
+	<p>
+		Rotation Up/Down:  <input id="xAngle" type="range" min="-180" max="180" step="5" value="0" onchange="setXAngle()" />
+		<span id="xAngletext" style="background-color: yellow;">0&deg;</span>
+	</p>
+    <script src="./webgl-utils.js"></script>
+    <script src="./webgl-debug.js"></script>
+    <script src="./cuon-utils.js"></script>
+    <script src="./cuon-matrix.js"></script>
+    <script src="Test2.js"></script>
+  </body>
+</html>

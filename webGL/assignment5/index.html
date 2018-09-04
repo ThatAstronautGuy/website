@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Intro to Greyscale</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body onload="main()">
+  	<div class="canvas-container">
+	    <canvas class="canvas-l" id="canvas" width="200" height="200">
+			Please use a browser that supports "canvas"
+	    </canvas>
+
+	    <canvas class="canvas-r" id="canvas2" width="200" height="200">
+			Please use a browser that supports "canvas"
+	    </canvas>
+	</div>
+	<div class="grid-container">
+		<div class="col1 row0 box">Convert To Grey</div>
+		<div class="col2 row0 box">Colour Filtering</div>
+		<div class="col3 row0 box">Limit Greys</div>
+		<div class="col4 row0 box">Limit Colours</div>
+
+		<div class="col4 row5 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(0);" checked>No Conversion</input>
+		</div>	
+		<div class="col1 row1 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(1);" >Averaging</input>
+		</div>
+		<div class="col1 row2 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(2);" >Luma</input>
+		</div>
+		<div class="col1 row3 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(3);" >Luminance</input>
+		</div>
+		<div class="col1 row4 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(4);" >De-saturation</input>
+		</div>	
+		<div class="col1 row5 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(5);" >Max Decomp</input>
+		</div>	
+		<div class="col1 row6 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(6);" >Min Decomp</input>
+		</div>	
+		<div class="col1 row7 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(7);" >Red as Grey</input>
+		</div>	
+		<div class="col1 row8 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(8);" >Green as Grey</input>
+		</div>	
+		<div class="col1 row9 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(9);" >Blue as Grey</input>
+		</div>
+		<div class="col2 row1 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(10);" >Red Only</input>
+		</div>
+		<div class="col2 row2 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(11);" >Green Only</input>
+		</div>
+		<div class="col2 row3 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(12);" >Blue Only</input>
+		</div>
+		<div class="col2 row4 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(13);" >No Red</input>
+		</div>
+		<div class="col2 row5 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(14);" >No Green</input>
+		</div>	
+		<div class="col2 row6 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(15);" >No Blue</input>
+		</div>		
+		<div class="col3 row1 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(16);" >4 Greys</input>
+		</div>
+		<div class="col3 row2 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(17);" >16 Greys</input>
+		</div>
+		<div class="col3 row3 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(18);" >32 Greys</input>
+		</div>
+		<div class="col3 row4 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(19);" >50 Greys</input>
+		</div>	
+		<div class="col4 row1 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(20);" checked>64 Colours</input>
+		</div>
+		<div class="col4 row2 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(21);" checked>512 Colours</input>
+		</div>		
+		<div class="col4 row3 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(22);" checked>4096 Colours</input>
+		</div>
+		<div class="col4 row4 box">
+			<input type="radio" name="imgCon" onchange="applyFilter(23);" checked>125000 Colours</input>
+		</div>				
+		
+	   <script src="greys.js"></script>
+  </div>
+  Image taken by me
+  </body>
+</html>

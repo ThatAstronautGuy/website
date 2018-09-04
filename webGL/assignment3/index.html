@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <title>Jared Kelly Assignment 3 Cosc 3306</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p>
+      <button type="button" onclick="reset()">RESET</button>
+    </p>
+
+  	<p>
+  		<span id="algorithm">Cohen-Sutherland is being used</span>
+  	</p>
+  	
+    <p>Key Controls:</p>
+    <p>Switch Algorithm: Space</p>
+    <p>Reset: R</p>
+    
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="MyLibrary.js"></script>
+    <script src="Assignment3.js"></script>
+  </body>
+</html>
+
