@@ -46,6 +46,9 @@ html,body {
 
 .nostyle {
 	text-decoration: none;
+}
+
+.mainlink {
 	color: #9d9d9d;
 	font-size: 140%;
 	padding-left: 15px;
@@ -63,6 +66,9 @@ html,body {
 
 .toplink {
 	font-size: 120%;
+	color: #9d9d9d;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .content {
@@ -74,44 +80,18 @@ html,body {
 .contentbody {
 	text-align: left;
 }
+
 .footer {
 	font-size: 100%;
 	background-color: #f8f8f8;
-}
-
-.profileimage {
-	border-radius: 50%;
-	padding-right: 10px;
-}
-
-.friends {
-	background: lightgrey;
-	border-radius: 10px;
-	-webkit-box-shadow: 0 8px 6px -6px grey;
-   -moz-box-shadow: 0 8px 6px -6px grey;
-        box-shadow: 0 8px 6px -6px grey;
-    margin-bottom: 10px;
-}
-
-.friendshead {
-	display: inline-block;
-	padding: 10px;
-	padding-bottom: 10px;
-	background-color: darkgrey;
-	border-radius: 10px 0 10px 0;
-}
-
-.friendsbody {
-	padding: 10px;
 }
 
 .inline {
 	float: left;
 }
 
-.friendslink {
-	text-decoration: none;
-	colour: ;
+.project-link {
+	color: #000000;
 }
 
 @media only screen and (max-width: 500px) {
